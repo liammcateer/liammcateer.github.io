@@ -23,3 +23,66 @@ body{
   height:100%;
   z-index: -1;
 }
+
+/* ===NAVIGATION=== */
+.side-nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 5%;
+  height: 100vh;
+  background-color: var(--panel);
+  box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.nav-item{
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 0.8em;
+}
+
+.nav-item .fas{
+  font-size: 1.5em !important;
+  padding: 5px 0px;
+}
+
+.active-page{
+  color: var(--accent) !important;
+  background-color: var(--background);
+}
+
+.nav-item:hover{
+  /* color: var(--accent); */
+  background-color: var(--background);
+}
+
+.social-nav{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.social-item {
+  padding: 5px 0px;
+  font-size: 0.75em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.social-item .fab{
+  font-size: 2em;
+}
+
+.social-item:hover{
+  color: var(--accent);
+}
