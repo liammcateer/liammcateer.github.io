@@ -25,11 +25,11 @@ export class Navigation extends Component {
                         </NavLink>
                     </nav>
                     <nav className="social-nav">
-                        <a href="https://github.com/liammcateer/" className="social-item">
+                        <a href="https://github.com/liammcateer/" target="_blank" className="social-item">
                             <i class="fab fa-github"></i><br/>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/liammcateer/" className="social-item">
+                        <a href="https://www.linkedin.com/in/liammcateer/" target="_blank" className="social-item">
                             <i class="fab fa-linkedin-in"></i><br/>
                             <span>LinkedIn</span>
                         </a>
