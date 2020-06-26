@@ -84,7 +84,7 @@
         "mode": "bounce"
       },
       "color": {
-        "value": "#ffffff",
+        "value": "#cccccc",
         "animation": {
           "enable": false,
           "speed": 1,
@@ -94,7 +94,7 @@
       "links": {
         "blink": false,
         "color": {
-          "value": "#ffffff"
+          "value": "#cccccc"
         },
         "consent": false,
         "distance": 150,
