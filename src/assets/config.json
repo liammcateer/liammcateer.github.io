@@ -4,5 +4,6 @@
     "github": "https://www.github.com/liammcateer/",
     "skills": [
         "Computer Science Student"
-        ]
+    ],
+    "backendHost": "https://liammcateer-profile-site.herokuapp.com"
 }

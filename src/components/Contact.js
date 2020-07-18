@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import profile from '../assets/profile.json';
+import config from '../assets/config.json';
+import axios from 'axios'
 
 export class Contact extends Component {
     constructor(props) {
@@ -50,6 +51,13 @@ export class Contact extends Component {
         e.preventDefault()
         
         //Send using axios
+        axios.post(`${config.backendHost}/api/contact`, this.state)
+            .then(function (response){
+                alert('Success')
+            })
+            .catch(function (error){
+                alert('Error:\n' + error)
+            })
     }
 
 }

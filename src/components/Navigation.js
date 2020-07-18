@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import profile from '../assets/profile.json';
+import config from '../assets/config.json';
 
 export class Navigation extends Component {
     render() {
@@ -26,11 +26,11 @@ export class Navigation extends Component {
                         </NavLink>
                     </nav>
                     <nav className="social-nav">
-                        <a href={profile.github} target="_blank" rel="noopener noreferrer" className="social-item">
+                        <a href={config.github} target="_blank" rel="noopener noreferrer" className="social-item">
                             <i className="fab fa-github"></i><br/>
                             <span>GitHub</span>
                         </a>
-                        <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="social-item">
+                        <a href={config.linkedin} target="_blank" rel="noopener noreferrer" className="social-item">
                             <i className="fab fa-linkedin-in"></i><br/>
                             <span>LinkedIn</span>
                         </a>
