@@ -1,6 +1,5 @@
-import React, { Component, Profiler } from 'react'
+import React, { Component } from 'react'
 import profile from '../assets/profile.json';
-import Typewriter from 'typewriter-effect';
 
 export class Home extends Component {
     render() {
@@ -9,7 +8,7 @@ export class Home extends Component {
                 <div className="home-wrapper">
                     <h1>
                         Hi,<br />
-                        I'm <a href={profile.linkedin} target="_blank" className="accent">{profile.name}</a>
+                        I'm <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="accent">{profile.name}</a>
                     </h1>
                     <div className="home-skills">
                         {profile.skills.map((skill) => {return <p>{skill}</p>})}

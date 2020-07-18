@@ -5,6 +5,7 @@ import Particles from 'react-particles-js';
 import particleConfig from './assets/particleConfig.json';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Navigation />
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
       </div>
     </Router>
