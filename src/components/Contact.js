@@ -9,6 +9,8 @@ export class Contact extends Component {
             name: '',
             email: '',
             message: '',
+            loading: false,
+            statusMessage: '',
         };
     }
 
@@ -16,6 +18,7 @@ export class Contact extends Component {
         return (
             <div className="content-wrapper">
                 <h1>Contact</h1>
+                <p>{this.state.loading ? "Loading..." : this.state.statusMessage}</p>
                 <form onSubmit={this.handleSubmit.bind(this)}>
                     <label>
                         Name:
@@ -49,15 +52,25 @@ export class Contact extends Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        
+        this.setState({ statusMessage: 'Loading...' })
+
         //Send using axios
         axios.post(`${config.backendHost}/api/contact`, this.state)
-            .then(function (response){
-                alert('Success')
+            .then((response) => {
+                this.setState({ statusMessage: 'Message Sent successfully.' })
+                this.resetForm(); 
             })
-            .catch(function (error){
-                alert('Error:\n' + error)
+            .catch((error) => {
+                this.setState({ statusMessage: 'Message not sent: ' + error }) 
             })
+    }
+
+    resetForm() {
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
     }
 
 }
