@@ -12,14 +12,14 @@ export class Navigation extends Component {
                             <i className="fas fa-home"></i><br/>
                             <span>Home</span>
                         </NavLink>
-                        <NavLink exact to="/about" className="nav-item" activeClassName="active-page">
+                        {/* <NavLink exact to="/about" className="nav-item" activeClassName="active-page">
                             <i className="fas fa-user"></i><br/>
                             <span>About</span>
                         </NavLink>
                         <NavLink exact to="/portfolio" className="nav-item" activeClassName="active-page">
                             <i className="fas fa-code"></i><br/>
                             <span>Portfolio</span>
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink exact to="/contact" className="nav-item" activeClassName="active-page">
                             <i className="fas fa-envelope"></i><br/>
                             <span>Contact</span>
