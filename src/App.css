@@ -123,11 +123,8 @@ a{
 }
 
 /* ===HOME=== */
-.Typewriter{
-  margin-top: 15px;
-}
-
-.Typewriter span{
+.home-skills > p{
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em;
+  margin-top: 5px;
 }
