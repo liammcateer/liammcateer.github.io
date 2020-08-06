@@ -123,8 +123,17 @@ a{
 }
 
 /* ===HOME=== */
-.home-skills > p{
+.home-skills{
+  margin-top: 15px;
+}
+
+.skill{
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em;
   margin-top: 5px;
+}
+
+.Cursor{
+  font-size: 2em;
+  font-weight: bold;
 }
