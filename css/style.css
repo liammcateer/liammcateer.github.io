@@ -1,3 +1,9 @@
+:root{
+    --blue-grey: #0f1015;
+    --blue-grey-lighten-1: #191a1f;
+    --blue-grey-lighten-2: #232429;
+}
+
 body{
     margin: 0em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -18,11 +24,23 @@ a:hover{
     text-decoration: underline;
 }
 
+.content-wrapper{
+    margin: auto;
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/* Navigation */
 .main-nav{
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    background-color: #0f1015;
+    background-color: var(--blue-grey);
     width: 100%;
 }
 
@@ -37,23 +55,23 @@ a:hover{
     display: inline-block;
 }
 
-.mobile-nav{
-    display: none;
-}
-
 .main-nav a{
     color: white;
 }
 
-.content-wrapper{
-    margin: auto;
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
+.mobile-nav{
+    position: fixed;
+    width: 100%;
+    display: none;
+    background-color: var(--blue-grey);
+    z-index: 999;
+    text-align: right;
+}
+
+.mobile-nav a {
+    display: block;
+    color: white;
+    padding: 1em;
 }
 
 .home{
@@ -61,15 +79,15 @@ a:hover{
 }
 
 #home, #footer{
-    background-color: #0f1015;
+    background-color: var(--blue-grey);
 }
 
 #about, #contact{
-    background-color: #191a1f
+    background-color: var(--blue-grey-lighten-1)
 }
 
 #portfolio{
-    background-color: #232429
+    background-color: var(--blue-grey-lighten-2)
 }
 
 .footer{
@@ -99,7 +117,7 @@ a:hover{
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
     /* Mobile */
     .main-nav ul{
         height: 100vh;
@@ -117,17 +135,6 @@ a:hover{
     }
 
     .mobile-nav{
-        position: fixed;
-        width: 100%;
         display: block;
-        background-color: #0f1015;
-        z-index: 999;
-        text-align: right;
-    }
-
-    .mobile-nav a {
-        display: block;
-        color: white;
-        padding: 1em;
     }
 }
