@@ -33,6 +33,7 @@ a:hover{
     align-items: center;
     flex-direction: column;
     text-align: justify;
+    padding: 3em 0em;
 }
 
 /* Navigation */
@@ -108,6 +109,51 @@ a:hover{
 
 .social-nav a{
     color: white;
+}
+
+/* Contact form */
+#formStatusMessage{
+    text-align: center;
+    padding: 1em;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+form{
+    width: 80%;
+}
+
+label{
+    display: block;
+    padding: 0.5em 0em;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    font-size: 1.25em;
+    margin: 0.75em 0em;
+    padding: 0.25em 0em;
+}
+
+button{
+    padding: 0.75em;
+    width: 100%;
+    background-color: var(--blue-grey);
+    color: white;
+    font-size: 1.25em;
+    border: 3px solid green;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
 }
 
 @media only screen and (max-width: 1200px) {

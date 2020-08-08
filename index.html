@@ -18,8 +18,8 @@
     <nav class="main-nav" id="main-nav">
         <ul id="main-nav-ul">
             <li><a class="code" onclick="scrollToSection('home')">Home</a></li>
-            <li><a class="code" onclick="scrollToSection('about')">About</a></li>
-            <li><a class="code" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+            <!-- <li><a class="code" onclick="scrollToSection('about')">About</a></li>
+            <li><a class="code" onclick="scrollToSection('portfolio')">Portfolio</a></li> -->
             <li><a class="code" onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
@@ -33,7 +33,7 @@
             </p>
         </div>
     </header>
-    <section class="content-panel" id="about">
+    <!-- <section class="content-panel" id="about">
         <div class="content-wrapper">
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero animi illo necessitatibus obcaecati, veniam similique accusamus possimus sequi numquam delectus voluptate fugiat, mollitia iste recusandae id? Quisquam, tempore error.</p>
@@ -45,10 +45,25 @@
         <div class="content-wrapper">
             <h2>Portfolio</h2>
         </div>
-    </section>
+    </section> -->
     <section class="content-panel" id="contact">
         <div class="content-wrapper">
             <h2>Contact</h2>
+            <div id="formStatusMessage">
+            </div>
+            <form onsubmit="event.preventDefault(); processContactForm(this);">
+                <label>Name
+                    <input type="text" name="name">
+                </label>
+                <label>Email
+                    <input type="text" name="email">
+                </label>
+                <label>Message
+                    <textarea name="message"></textarea>
+                </label>
+                
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     <footer class="footer" id="footer">
