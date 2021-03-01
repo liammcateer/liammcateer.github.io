@@ -43,6 +43,7 @@ a:hover{
     position: fixed;
     background-color: var(--blue-grey);
     width: 100%;
+    z-index: 999;
 }
 
 .main-nav ul{
@@ -87,8 +88,23 @@ a:hover{
     background-color: var(--blue-grey-lighten-1)
 }
 
-#portfolio{
+#projects{
     background-color: var(--blue-grey-lighten-2)
+}
+
+.projects-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-items .card {
+    margin: 10px;
+    background-color: var(--blue-grey);
+    box-shadow: 5px 5px 5px #111111;
+}
+
+.card-links{
+    text-align: center;
 }
 
 .footer{
