@@ -1,202 +1,69 @@
-:root{
-    --blue-grey: #0f1015;
-    --blue-grey-lighten-1: #191a1f;
-    --blue-grey-lighten-2: #232429;
+:root {
+  --blue-grey: #0f1015;
+  --blue-grey-lighten-1: #191a1f;
+  --blue-grey-lighten-2: #232429;
 }
 
-body{
-    margin: 0em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+body {
+  margin: 0em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: Arial, Helvetica, sans-serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: green;
-    text-decoration: none;
+  color: green;
+  text-decoration: none;
 }
 
-a:hover{
-    opacity: 0.6;
-    text-decoration: underline;
+a:hover {
+  opacity: 0.6;
+  text-decoration: underline;
 }
 
-.content-wrapper{
-    margin: auto;
-    min-height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
-    padding: 3em 0em;
+.content-wrapper {
+  margin: auto;
+  min-height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  padding: 3em 0em;
 }
 
-/* Navigation */
-.main-nav{
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    background-color: var(--blue-grey);
-    width: 100%;
-    z-index: 999;
+.home {
+  text-align: left !important;
 }
 
-.main-nav ul{
-    margin: 0;
+#home {
+  background-color: var(--blue-grey);
 }
 
-.main-nav li{
-    padding: 1em;
-    list-style: none;
-    cursor: pointer;
-    display: inline-block;
+.subtitle {
+  font-size: 1.25em;
 }
 
-.main-nav a{
-    color: white;
+.code {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.mobile-nav{
-    position: fixed;
-    width: 100%;
-    display: none;
-    background-color: var(--blue-grey);
-    z-index: 999;
-    text-align: right;
-}
-
-.mobile-nav a {
-    display: block;
-    color: white;
-    padding: 1em;
-}
-
-.home{
-    text-align: left !important;
-}
-
-#home, #footer{
-    background-color: var(--blue-grey);
-}
-
-#about, #contact{
-    background-color: var(--blue-grey-lighten-1)
-}
-
-#projects{
-    background-color: var(--blue-grey-lighten-2)
-}
-
-.projects-items{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.projects-items .card {
-    margin: 10px;
-    background-color: var(--blue-grey);
-    box-shadow: 5px 5px 5px #111111;
-}
-
-.card-links{
-    text-align: center;
-}
-
-.footer{
-    padding: 2em 0em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.subtitle{
-    font-size: 1.25em;
-}
-
-.code{
-    font-family: "Courier New", Courier, monospace;
-}
-
-.social-nav a{
-    color: white;
-}
-
-/* Contact form */
-#formStatusMessage{
-    text-align: center;
-    padding: 1em;
-}
-
-.error{
-    color: red;
-}
-
-.success{
-    color: green;
-}
-
-form{
-    width: 80%;
-}
-
-label{
-    display: block;
-    padding: 0.5em 0em;
-}
-
-input, textarea{
-    display: block;
-    width: 100%;
-    font-size: 1.25em;
-    margin: 0.75em 0em;
-    padding: 0.25em 0em;
-}
-
-button{
-    padding: 0.75em;
-    width: 100%;
-    background-color: var(--blue-grey);
-    color: white;
-    font-size: 1.25em;
-    border: 3px solid green;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: green;
+.social-nav a {
+  color: white;
 }
 
 @media only screen and (max-width: 1200px) {
-    /* Tablet Desktop */
-    .content-wrapper{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 577px) {
-    /* Mobile */
-    .main-nav ul{
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-        align-items: center;
-    }
-
-    .main-nav{
-        transform: translateY(-110%);
-        transition: 0.5s ease;
-    }
-
-    .mobile-nav{
-        display: block;
-    }
+  /* Tablet Desktop */
+  .content-wrapper {
+    width: 80%;
+  }
 }

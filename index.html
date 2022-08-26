@@ -1,92 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="./css/style.css" type="text/css" rel="stylesheet">
-    <link href="./css/fontello.css" type="text/css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    <link href="./css/fontello.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Liam McAteer</title>
-</head>
-<body>
-    <nav class="mobile-nav">
-        <a class="code" onclick="toggleNav()"><i class="icon-menu"></i>Menu</a>
-    </nav>
-    <nav class="main-nav" id="main-nav">
-        <ul id="main-nav-ul">
-            <li><a class="code" onclick="scrollToSection('home')">Home</a></li>
-            <!-- <li><a class="code" onclick="scrollToSection('about')">About</a></li> -->
-            <li><a class="code" onclick="scrollToSection('projects')">Projects</a></li>
-            <li><a class="code" onclick="scrollToSection('contact')">Contact</a></li>
-        </ul>
-    </nav>
+  </head>
+  <body>
     <header class="content-panel" id="home">
-        <div class="content-wrapper home">
-            <h1>Hi, <br>I'm <a href="#">Liam McAteer</a></h1>
-            <span class="subtitle code">Software Developer</span>
-            <p class="social-nav">
-                <a class="code" href="https://github.com/liammcateer/" target="_blank"><i class="icon-github-circled"></i>Github</a>
-                <a class="code" href="https://www.linkedin.com/in/liammcateer/" target="_blank"><i class="icon-linkedin-squared"></i>Linkedin</a>
-            </p>
-        </div>
-    </header>
-    <!-- <section class="content-panel" id="about">
-        <div class="content-wrapper">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero animi illo necessitatibus obcaecati, veniam similique accusamus possimus sequi numquam delectus voluptate fugiat, mollitia iste recusandae id? Quisquam, tempore error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem voluptate nostrum corporis ab excepturi officia doloremque at, maxime ea laboriosam vero sed possimus modi! Perspiciatis reprehenderit explicabo voluptatibus laudantium.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, eum minus necessitatibus obcaecati reprehenderit eligendi, sed aspernatur unde accusamus, maiores quis maxime doloremque. Dolor aspernatur debitis odio libero. Delectus, voluptatem.</p>
-        </div>
-    </section> -->
-    <section class="content-panel" id="projects">
-        <div class="content-wrapper">
-            <h2>Projects</h2>
-            <div class="projects-items">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/porfolio_images/node-express-auth_screenshot.png" alt="screenshot of node.js authentication project">
-                    <div class="card-body">
-                      <h5 class="card-title">Node.js auth with JWT</h5>
-                      <p class="card-text">I wanted to get exposure on how JWT authentication works and to also brush up on my Node.js and TypeScript skills.</p>
-                      <div class="card-links">
-                          <a href="https://github.com/liammcateer/node-express-auth/" target="_blank"><i class="icon-github-circled"></i>View Code</a> | 
-                          <a href="https://node-express-auth-production.herokuapp.com/" target="_blank"><i class="icon-play-circled2"></i>View Demo</a>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <section class="content-panel" id="contact">
-        <div class="content-wrapper">
-            <h2>Contact</h2>
-            <div id="formStatusMessage">
-            </div>
-            <form onsubmit="event.preventDefault(); processContactForm(this);">
-                <label>Name
-                    <input type="text" name="name">
-                </label>
-                <label>Email
-                    <input type="text" name="email">
-                </label>
-                <label>Message
-                    <textarea name="message"></textarea>
-                </label>
-                
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-    <footer class="footer" id="footer">
-        &copy; Liam McAteer <script>document.write(new Date().getFullYear())</script>
+      <div class="content-wrapper home">
+        <h1>
+          Hi, <br />I'm
+          <a href="https://www.linkedin.com/in/liammcateer/">Liam McAteer</a>
+        </h1>
+        <span class="subtitle code">Software Developer</span>
         <p class="social-nav">
-            <a href="https://github.com/liammcateer/" target="_blank"><i class="icon-github-circled"></i>Github</a>
-            <a href="https://www.linkedin.com/in/liammcateer/" target="_blank"><i class="icon-linkedin-squared"></i>Linkedin</a>
+          <a class="code" href="https://github.com/liammcateer/" target="_blank"
+            ><i class="icon-github-circled"></i>Github</a
+          >
+          <a
+            class="code"
+            href="https://www.linkedin.com/in/liammcateer/"
+            target="_blank"
+            ><i class="icon-linkedin-squared"></i>Linkedin</a
+          >
         </p>
-    </footer>
-</body>
+      </div>
+    </header>
+  </body>
 </html>
