@@ -8,6 +8,7 @@ body {
   margin: 0em;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
+  background-color: var(--blue-grey);
 }
 
 h1,
@@ -38,15 +39,10 @@ a:hover {
   align-items: center;
   flex-direction: column;
   text-align: justify;
-  padding: 3em 0em;
 }
 
 .home {
   text-align: left !important;
-}
-
-#home {
-  background-color: var(--blue-grey);
 }
 
 .subtitle {
